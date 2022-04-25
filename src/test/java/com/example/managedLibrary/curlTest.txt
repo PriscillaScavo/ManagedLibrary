@@ -1,0 +1,10 @@
+curl -v localhost:8080/library/books/
+curl -v -X POST localhost:8080/library/books -H 'Content-Type:application/json' -d '{"nameAuthor": "Invisible Man by Ralph Ellison"}'
+curl -v localhost:8080/library/books/3
+curl -v -X DELETE localhost:8080/library/books/3
+
+curl -v http://localhost:8080/library/loans
+curl -v -X POST localhost:8080/library/loans -H 'Content-Type:application/json' -d '{"description": "Invisible Man by Ralph Ellison"}'
+curl -v -X DELETE http://localhost:8080/library/loans/5/lost
+curl -v -X PUT localhost:8080/library/loans/5/returned
+

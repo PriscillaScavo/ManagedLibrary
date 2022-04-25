@@ -1,0 +1,15 @@
+com/example/managedLibrary/LoanNotFoundException.class
+com/example/managedLibrary/Loan.class
+com/example/managedLibrary/BookNotFoundAdvice.class
+com/example/managedLibrary/LoanNotFoundAdvice.class
+com/example/managedLibrary/OneBook.class
+com/example/managedLibrary/LoanModelAssembler.class
+com/example/managedLibrary/LoanStatus.class
+com/example/managedLibrary/BookNotFoundException.class
+com/example/managedLibrary/BookModelAssembler.class
+com/example/managedLibrary/BookController.class
+com/example/managedLibrary/LoanRepository.class
+com/example/managedLibrary/LoadDatabase.class
+com/example/managedLibrary/BookRepository.class
+com/example/managedLibrary/ManagedLibraryApplication.class
+com/example/managedLibrary/LoanController.class

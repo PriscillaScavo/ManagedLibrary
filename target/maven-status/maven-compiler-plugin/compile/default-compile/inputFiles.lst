@@ -1,0 +1,15 @@
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/LoanNotFoundAdvice.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/LoanController.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/BookNotFoundAdvice.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/Loan.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/OneBook.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/LoanRepository.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/LoanStatus.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/BookNotFoundException.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/LoanModelAssembler.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/BookModelAssembler.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/LoadDatabase.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/BookRepository.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/LoanNotFoundException.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/ManagedLibraryApplication.java
+/home/priscilla/Projects/ManagedLibrary/src/main/java/com/example/managedLibrary/BookController.java
