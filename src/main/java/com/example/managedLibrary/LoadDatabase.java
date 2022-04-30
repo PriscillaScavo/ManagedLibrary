@@ -16,8 +16,8 @@ class LoadDatabase {
     CommandLineRunner initDatabase(BookRepository bookRepository) {
 
         return args -> {
-            bookRepository.save(new OneBook("Ulysses", "James Joyce"));
-            bookRepository.save(new OneBook("One Hundred Years of Solitude", "Gabriel Garcia Marquez"));
+            bookRepository.save(new OneBook("Ulysses", "James Joyce",1L));
+            bookRepository.save(new OneBook("One Hundred Years of Solitude", "Gabriel Garcia Marquez", 2L));
 
             bookRepository.findAll().forEach(book -> log.info("Preloaded " + book));
 

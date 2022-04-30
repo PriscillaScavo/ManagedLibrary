@@ -12,15 +12,15 @@ class OneBook {
     private @Id @GeneratedValue Long id;
     private String name ;
     private String author;
+    private Long idFE;
 
 
     OneBook() {}
 
-    OneBook(String name, String author) {
-
+    OneBook(String name, String author, Long idFE) {
         this.name = name;
         this.author = author;
-
+        this.idFE = id;
     }
 
 
@@ -30,6 +30,14 @@ class OneBook {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getIdFE() {
+        return id;
+    }
+
+    public void setIdFE(Long idFE) {
+        this.idFE = idFE;
     }
 
     public String getName() {
@@ -74,6 +82,6 @@ class OneBook {
 
     @Override
     public String toString() {
-        return "OneBook{" + "id=" + this.id + ", name='" + this.name + '\'' + ", author='" + this.author + '}';
+        return "OneBook{" + "id=" + this.id + ", name='" + this.name + '\'' + ", author='" + this.author + '\'' + "idFE=" + this.idFE + '}' ;
     }
 }

@@ -49,8 +49,8 @@ public class ManagedLibraryApplicationTests {
 	@Test
 	public void getOneBook()
 			throws Exception {
-		EntityModel<OneBook> book1 = EntityModel.of(new OneBook("Ulysses", "James Joyce"));
-		EntityModel<OneBook> book2 = EntityModel.of(new OneBook("One Hundred Years of Solitude", "Gabriel Garcia Marquez"));
+		EntityModel<OneBook> book1 = EntityModel.of(new OneBook("Ulysses", "James Joyce",1L));
+		EntityModel<OneBook> book2 = EntityModel.of(new OneBook("One Hundred Years of Solitude", "Gabriel Garcia Marquez",2L));
 		Collection<EntityModel<OneBook>> books = Arrays.asList(book1, book2);
 		CollectionModel<EntityModel<OneBook>> allBooks = CollectionModel.of(books);
 		long id1 = 1;
@@ -68,8 +68,8 @@ public class ManagedLibraryApplicationTests {
 	@Test
 	public void getAllBooks()
 			throws Exception {
-		EntityModel<OneBook> book1 = EntityModel.of(new OneBook("Ulysses", "James Joyce"));
-		EntityModel<OneBook> book2 = EntityModel.of(new OneBook("One Hundred Years of Solitude", "Gabriel Garcia Marquez"));
+		EntityModel<OneBook> book1 = EntityModel.of(new OneBook("Ulysses", "James Joyce", 1L));
+		EntityModel<OneBook> book2 = EntityModel.of(new OneBook("One Hundred Years of Solitude", "Gabriel Garcia Marquez",2L));
 		Collection<EntityModel<OneBook>> books = Arrays.asList(book1, book2);
 		CollectionModel<EntityModel<OneBook>> allBooks = CollectionModel.of(books);
 
@@ -84,7 +84,7 @@ public class ManagedLibraryApplicationTests {
 	}
 	@Test
 	public void postBook() throws Exception {
-		OneBook b1 = new OneBook("Ulysses", "James Joyce");
+		OneBook b1 = new OneBook("Ulysses", "James Joyce", 1L);
 		EntityModel<OneBook> entitybook1 = EntityModel.of(b1);
 		ResponseEntity<EntityModel<OneBook>> responseEntitybook1 = new ResponseEntity<EntityModel<OneBook>>(entitybook1,HttpStatus.CREATED);
 		when(serviceBook.newBook(Mockito.any(OneBook.class))).thenReturn(responseEntitybook1);
@@ -100,7 +100,7 @@ public class ManagedLibraryApplicationTests {
 
 	@Test
 	public void deleteBook() throws Exception {
-		OneBook b1 = new OneBook("Ulysses", "James Joyce");
+		OneBook b1 = new OneBook("Ulysses", "James Joyce",1L);
 		EntityModel<OneBook> book1 = EntityModel.of(b1);
 		ResponseEntity<EntityModel<OneBook>> responseEntitybook1 = new ResponseEntity<EntityModel<OneBook>>(book1, HttpStatus.OK);
 		long id1 = 1;

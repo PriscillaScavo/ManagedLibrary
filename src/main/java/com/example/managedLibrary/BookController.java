@@ -66,8 +66,4 @@ class BookController {
 
         return ResponseEntity.noContent().build();
     }
-    @GetMapping("/library/api/hello")
-    public String hello() {
-        return "Hello, the time at the server is now " + new Date() + "\n";
-    }
 }
